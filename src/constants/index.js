@@ -1,9 +1,8 @@
 import yashfoodz from "../assets/yashfoodz.png";
-import projects2 from "../assets/projects2.webp";
-import projects3 from "../assets/projects3.webp";
-import projects4 from "../assets/projects4.webp";
-import projects5 from "../assets/projects5.webp";
-import projects6 from "../assets/projects6.webp";
+import food from "../assets/food.jpg";
+import recipe from "../assets/recipe.jpg";
+
+import ecommerce from "../assets/ecommerce.jpg";
 
 
 
@@ -28,78 +27,40 @@ export const PROJECTS = [
   {
     name: "YashFoodz",
     description: "A food Ordering app using React js and redux toolkit",
-    image: yashfoodz,
-    link: "https://github.com/your-github/streamerzz",
+    image: food,
+    link: "https://github.com/Yashshiva75/Food-Dilevery-app",
+    live:"https://yashfoodz.netlify.app/"
   },
   {
-    name: "NutriTrack",
-    description: "Track your meals and calories with smart AI suggestions",
-    image: projects2,
-    link: "https://github.com/your-github/nutritrack",
+    name: "E-commerce",
+    description: "This app is made using React js ,Tailwind ,Headless ui, and Firebase as backend",
+    image: ecommerce,
+    link: "https://github.com/Yashshiva75/Full-stack-E-commerce",
+    
   },
   {
-    name: "HairRevive",
-    description: "A platform for hair regrowth solutions powered by science",
-    image: projects3,
-    link: "https://github.com/your-github/hairrevive",
+    name: "Meal master",
+    description: "This project is made using vanilla javascript that uses mealdb's API to fetch dishes",
+    image: recipe,
+    link: "https://github.com/Yashshiva75/Recipe-app",
+    live: "https://recipeapp-xi-one.vercel.app/"
   },
-  {
-    name: "DevDeck",
-    description:
-      "Interactive dashboard for developers to track coding activity",
-    image: projects4,
-    link: "https://github.com/your-github/devdeck",
-  },
-  {
-    name: "FitConnect",
-    description: "Fitness social network to connect athletes and trainers",
-    image: projects5,
-    link: "https://github.com/your-github/fitconnect",
-  },
-  {
-    name: "WellNest",
-    description: "A wellness app for mental and physical health improvement",
-    image: projects6,
-    link: "https://github.com/your-github/wellnest",
-  },
+  
 ];
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I am a dedicated frontend developer with a passion for building modern web applications that are both functional and aesthetically pleasing. Over the years, I have worked on numerous projects ranging from single-page applications to complex multi-tiered systems, always ensuring high performance and seamless user experiences.",
-    "I specialize in using technologies like React, Next.js, and Tailwind CSS to create responsive and scalable interfaces. My focus is on writing clean, maintainable code while collaborating with cross-functional teams to deliver projects that meet both business goals and user needs. I thrive in environments that challenge me to continuously learn and grow.",
+    "I hold a B.Tech in Computer Science from Bikaner Technical University, with 1 year of hands-on experience in Prompt Engineering. My technical expertise spans across React.js, TailwindCSS, Bootstrap, Firebase, Material UI, Chakra UI, Node.js, MongoDB, and MySQL. As an aspiring MERN Stack Developer, I am passionate about building scalable, dynamic web applications and continuously improving my skills to stay ahead in the ever-evolving tech landscape. With a blend of creativity and problem-solving abilities, I aim to deliver exceptional digital solutions that drive innovation and enhance user experiences."
   ],
 };
 
 export const EXPERIENCES = [
   {
-    yearRange: "2023 — Now",
-    title: "Senior Frontend Engineer at TechCorp",
-    location: "Paris, France",
+    yearRange: "2023 — 2024",
+    title: "Prompt Engineer at Softage.Ai",
+    location: "Ahemdabad",
     description: [
-      "Leading the development of scalable frontend architecture for enterprise-level applications.",
-      "Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.",
-      "Driving innovation through continuous improvements in performance and UI/UX design.",
-    ],
-  },
-  {
-    yearRange: "2021 — 2023",
-    title: "Frontend Engineer at Startup Inc.",
-    location: "Remote",
-    description: [
-      "Built dynamic, responsive, and accessible web applications using React, Next.js, and Tailwind CSS.",
-      "Spearheaded frontend optimization efforts, resulting in a 40% performance boost.",
-      "Mentored junior developers and led internal frontend workshops.",
-    ],
-  },
-  {
-    yearRange: "2018 — 2021",
-    title: "Frontend Developer at Creative Solutions",
-    location: "London, UK",
-    description: [
-      "Developed and maintained user interfaces for high-traffic websites.",
-      "Worked closely with designers to implement pixel-perfect designs.",
-      "Optimized websites for SEO and performance, resulting in a 30% increase in traffic.",
+      "In my role as a Prompt Engineer, I worked on developing and optimizing AI-driven solutions by crafting, refining, and testing prompts for large language models. My responsibilities included designing effective prompts to generate accurate, context-aware outputs, analyzing model behavior, and iterating prompts to improve performance across various use cases. I collaborated with AI teams to gather and annotate raw data, ensuring that the model responses align with the intended task requirements. Additionally, I leveraged tools like Bash scripting, Git, and GitHub for prompt version control, making significant contributions to enhancing the capabilities of AI-driven models for more reliable and efficient responses.",
     ],
   },
 ];
@@ -109,26 +70,32 @@ export const CONTACT_CONTENT = {
   headline: "LET'S WORK ON SOMETHING GREAT",
   description:
     "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
-  email: "jason@example.com",
+  email: "Yashshiva59@gmail.com",
   socialLinks: [
     {
-      platform: "Twitter",
-      url: "https://twitter.com/yourprofile",
+      platform: "Instagram",
+      url: "https://www.instagram.com/yash7shiva/",
       ariaLabel: "Follow me on Twitter",
-      icon: "RiTwitterXFill",
+      icon: "RiInstagramFill",
     },
     {
       platform: "GitHub",
-      url: "https://github.com/yourprofile",
+      url: "https://github.com/Yashshiva75",
       ariaLabel: "View my GitHub profile",
       icon: "RiGithubFill",
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://www.linkedin.com/in/yash-shiva/",
       ariaLabel: "Connect with me on LinkedIn",
       icon: "RiLinkedinFill",
     },
+    {
+      platform: "Gmail",
+      url: "http://www.yashshiva59@gmail.com/",
+      ariaLabel: "Connect with me on LinkedIn",
+      icon: "RiGoogleFill",
+    },
   ],
-  footerText: `© ${new Date().getFullYear()} Jason Root. All rights reserved.`,
+  footerText: `© ${new Date().getFullYear()} Yash shiva. All rights reserved.`,
 };

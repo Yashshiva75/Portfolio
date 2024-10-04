@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CONTACT_CONTENT } from '../../constants';
-import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from '@remixicon/react'; // Correcting the icon import
+import { RiGithubFill, RiLinkedinFill, RiInstagramFill,RiGoogleFill } from '@remixicon/react'; 
 
 const Contact = () => {
   const textVariants = {
@@ -65,11 +65,13 @@ const Contact = () => {
       <div className="flex space-x-6 mt-8">
         {CONTACT_CONTENT.socialLinks.map((link, index) => {
           const Icon =
-            link.icon === 'RiTwitterFill'
-              ? RiTwitterFill
+            link.icon === 'RiInstagramFill'
+              ? RiInstagramFill
               : link.icon === 'RiGithubFill'
               ? RiGithubFill
-              : RiLinkedinFill;
+              : link.icon === 'RiLinkedinFill'
+              ? RiLinkedinFill
+              : RiGoogleFill;
 
           return (
             <motion.a

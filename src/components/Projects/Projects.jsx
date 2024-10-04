@@ -10,7 +10,7 @@ const ProjectVariants = {
         y:0,
         transition:{
             duration:0.6,
-            ease:"easeOut",
+            ease:"easeInOut",
             type:"spring",
             bounce:0.4,
         }
@@ -25,7 +25,7 @@ const Projects = () => {
             {PROJECTS.map((project,index)=>(
                 <motion.div
                 key={index}
-                className="relative rounded-lg overflow-hidden h-[200px]
+                className="relative rounded-lg overflow-hidden h-[350px]
                 transition transform object-cover"
                 initial="hidden"
                 whileInView="visible"
@@ -40,12 +40,20 @@ const Projects = () => {
                     <h2 className='text-2xl font-medium mb-4'>{project.name}</h2>
                     <p className='mb-4 flex-grow text-2xl
                     '>{project.description}</p>
+                    <div className='flex justify-between'>
                     <a href={project.link} target='_blank'
                     rel='noopener norefferer'
                     className='bg-white text-stone-900
                     rounded-full py-2 px-2 w-32 text-sm hover:bg-gray-100 text-center'>
                         View On Github
                     </a>
+                    <a href={project.live} target='_blank'
+                    rel='noopener norefferer'
+                    className='bg-white text-stone-900
+                    rounded-full py-2 px-2 w-32 text-sm hover:bg-gray-100 text-center'>
+                        View live app
+                    </a>
+                    </div>
                  </div>
                 </motion.div>
             ))}

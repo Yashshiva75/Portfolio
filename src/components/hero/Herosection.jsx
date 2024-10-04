@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { HERO_CONTENT } from '../../constants'
-import jason from '../../assets/jason-root.webp'
+
 import yash from '../../assets/yash.jpeg'
 const textVariants = {
     hidden: {
@@ -49,11 +49,11 @@ const Herosection = () => {
                  {HERO_CONTENT.resumeLinkText}
                 </motion.a>
             </motion.div>
-            <motion.div className='w-full md:w-1/2 p-8'
+            <motion.div className='w-full md:w-1/2 p-8 items-center'
             initial="hidden"
             animate="visible"
             variants={imageVariants}>
-                <img src={yash} alt="Jason Root" width={350} height={350} className='rounded-3xl ml-32'/>
+                <img src={yash} alt="Jason Root" width={350} height={450} className='rounded-3xl ml-4'/>
             </motion.div>
         </div>
     </section>

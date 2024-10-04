@@ -1,26 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LINKS } from '../constants';
 import { RiCloseFill, RiMenu3Fill } from "@remixicon/react";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // Mobile menu state
+  const [isVisible, setIsVisible] = useState(true); // Navbar visibility state
+  const [lastScrollY, setLastScrollY] = useState(0); // Track scroll position
 
+  // Close the menu on link click
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
 
+  // Handle scrolling to show/hide the navbar
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY) {
+      setIsVisible(false); // Hide navbar on scroll down
+    } else {
+      setIsVisible(true); // Show navbar on scroll up
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
+    };
+  }, [lastScrollY]);
+
   return (
-    <nav className='fixed top-0 left-0 w-full z-50'>
-      <div className='flex justify-between items-center max-w-6xl mx-auto md:my-2 bg-stone-950/30 md:rounded-xl backdrop-blur-lg'>
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : '-translate-y-full'
+      }`}
+    >
+      <div className='flex justify-between items-center max-w-6xl mx-auto p-5 md:my-2 bg-stone-950/30 md:rounded-xl backdrop-blur-lg'>
         <div className='text-white font-semibold text-3xl uppercase'>
           <a href="/">Yash Shiva</a>
         </div>
 
-        
+        {/* Desktop Links */}
         <div className='hidden md:flex space-x-8 my-5 mx-2'>
           {LINKS.map((link, index) => (
-            <a href={link.href} key={index} className='text-white hover:text-stone-400 transition duration-300'>
+            <a
+              href={link.href}
+              key={index}
+              className='text-white hover:text-stone-400 transition duration-300 relative group'
+            >
               {link.label}
+              {/* Hover underline effect */}
+              <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute right-0 bottom-[-4px] w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>
