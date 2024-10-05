@@ -3,13 +3,18 @@ import { LINKS } from '../constants';
 import { RiCloseFill, RiMenu3Fill } from "@remixicon/react";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // Mobile menu state
-  const [isVisible, setIsVisible] = useState(true); // Navbar visibility state
-  const [lastScrollY, setLastScrollY] = useState(0); // Track scroll position
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   // Close the menu on link click
   const handleLinkClick = () => {
-    setMenuOpen(false);
+    setMenuOpen(false);  // Close the mobile menu after clicking a link
+  };
+
+  // Toggle mobile menu on button click
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);  // Toggle the state of the mobile menu
   };
 
   // Handle scrolling to show/hide the navbar
@@ -61,14 +66,14 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className='md:hidden'>
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={toggleMenu}  // Handle menu open/close
             className='text-white focus:outline-none'
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
             {menuOpen ? (
-              <RiCloseFill className='w-6 h-6' />
+              <RiCloseFill className='w-6 h-6' />  // Close icon when menu is open
             ) : (
-              <RiMenu3Fill className='w-6 h-6' />
+              <RiMenu3Fill className='w-6 h-6' />   // Menu icon when menu is closed
             )}
           </button>
         </div>
@@ -82,7 +87,7 @@ const Navbar = () => {
               href={link.href}
               key={index}
               className='text-white hover:text-stone-400 transition duration-300'
-              onClick={handleLinkClick}
+              onClick={handleLinkClick}  // Close the menu when a link is clicked
             >
               {link.label}
             </a>
