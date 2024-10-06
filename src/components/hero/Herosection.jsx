@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { HERO_CONTENT } from '../../constants'
-
 import yash from '../../assets/yash.jpeg'
+
 const textVariants = {
     hidden: {
         opacity:0,y:50
     },
-    visible:{opacity:1,y:0,transition:{duration:0.8,ease:"easeOut"}}
+    visible:{opacity:1,y:0,
+        transition:{duration:0.8,ease:"easeOut"}}
 }
 const containerVariants = {
     hidden: {opacity:1},

@@ -2,17 +2,17 @@ import React from 'react'
 import { PROJECTS } from '../../constants'
 import { motion } from 'framer-motion'
 const ProjectVariants = {
-    hidden:{opacity:0,scale:0.0,rotate: -40,y:50},
+    hidden:{opacity:0,scale:0.0,rotate: -100,y:50},
     visible:{
         opacity:1,
         scale:1,
         rotate:0,
         y:0,
         transition:{
-            duration:0.6,
-            ease:"easeInOut",
+            duration:0.8,
+            ease:"easeIn",
             type:"spring",
-            bounce:0.4,
+            bounce:0.2,
         }
     }
 }
@@ -29,7 +29,7 @@ const Projects = () => {
                 transition transform object-cover"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once:true}}
+                viewport={{once:false}}
                 variants={ProjectVariants}>
                  <img src={project.image} alt={project.name}
                  className='absolute inset-0 w-full h-full

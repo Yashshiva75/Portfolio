@@ -69,7 +69,7 @@ animate6:{
 const Blurbackground = () => {
   return (
     <div className='fixed top-0 left-0 w-full h-full overflow-hidden-z-10
-    pointer-events-none flex justify-center items-center filte blur-[100px] opacity-70'>
+    pointer-events-none flex justify-center items-center filter blur-[100px] opacity-70'>
         <motion.div className='bg-yellow-500 w-[350px] h-[250px] rounded-full absolute' variants={circleVariants}
         animate="animate1"></motion.div>
         <motion.div className='bg-orange-500 w-[360px] h-[260px] rounded-full absolute' variants={circleVariants}

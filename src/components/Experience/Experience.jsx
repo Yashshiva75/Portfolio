@@ -5,12 +5,15 @@ import { EXPERIENCES } from '../../constants';
 const Experience = () => {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.3 } }
+    visible: { opacity: 1, y: 0, 
+      transition: { duration: 0.8, ease: 'easeInOut', 
+        staggerChildren: 0.3 }}
   };
 
   const childVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+    hidden: { opacity: 0, y: 80 },
+    visible: { opacity: 1, y: 0,
+    transition: { duration: 0.6, ease: 'easeIn' }}
   };
 
   return (
@@ -22,7 +25,7 @@ const Experience = () => {
       <motion.div className='space-y-10'
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.3 }}
         variants={containerVariants}>
         {EXPERIENCES.map((experience, index) => (
           <motion.div key={index} variants={childVariants}>

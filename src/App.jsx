@@ -14,9 +14,7 @@ const App = () => {
       <Blurbackground/>
       <main className='antialiased overflow-x-hidden max-w-7xl mx-auto
       relative z-10'>
-        <Headroom>
            <Navbar/>
-        </Headroom>
       <Herosection/>
       <Projects/>
       <About/>
