@@ -7,8 +7,8 @@ import ecommerce from "../assets/ecommerce.jpg";
 
 
 export const LINKS = [
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
+  { href: "#work", label: "Projects" },
+  { href: "#about", label: "Education" },
   { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];

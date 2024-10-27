@@ -7,32 +7,28 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Close the menu on link click
   const handleLinkClick = () => {
-    setMenuOpen(false);  // Close the mobile menu after clicking a link
+    setMenuOpen(false);
   };
 
-  // Toggle mobile menu on button click
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);  // Toggle the state of the mobile menu
+    setMenuOpen(!menuOpen);
   };
 
-  // Handle scrolling to show/hide the navbar
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > lastScrollY) {
-      setIsVisible(false); // Hide navbar on scroll down
+      setIsVisible(false);
     } else {
-      setIsVisible(true); // Show navbar on scroll up
+      setIsVisible(true);
     }
     setLastScrollY(currentScrollY);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [lastScrollY]);
 
@@ -42,8 +38,8 @@ const Navbar = () => {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className='flex justify-between items-center max-w-6xl mx-auto p-5 md:my-2 bg-stone-950/30 md:rounded-xl backdrop-blur-lg'>
-        <div className='text-white font-semibold text-3xl uppercase'>
+      <div className='flex justify-between items-center max-w-6xl mx-auto md:my-2 bg-gradient-to-br from-gray-900 via-rose-600 to-gray-900 md:rounded-full backdrop-blur-lg neon-border'>
+        <div className='text-white font-semibold text-3xl ml-7 uppercase'>
           <a href="/">Yash Shiva</a>
         </div>
 
@@ -56,7 +52,6 @@ const Navbar = () => {
               className='text-white hover:text-stone-400 transition duration-300 relative group'
             >
               {link.label}
-              {/* Hover underline effect */}
               <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
               <span className="absolute right-0 bottom-[-4px] w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
@@ -66,14 +61,14 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className='md:hidden'>
           <button
-            onClick={toggleMenu}  // Handle menu open/close
+            onClick={toggleMenu}
             className='text-white focus:outline-none'
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
             {menuOpen ? (
-              <RiCloseFill className='w-6 h-6' />  // Close icon when menu is open
+              <RiCloseFill className='w-6 h-6' />
             ) : (
-              <RiMenu3Fill className='w-6 h-6' />   // Menu icon when menu is closed
+              <RiMenu3Fill className='w-6 h-6' />
             )}
           </button>
         </div>
@@ -87,7 +82,7 @@ const Navbar = () => {
               href={link.href}
               key={index}
               className='text-white hover:text-stone-400 transition duration-300'
-              onClick={handleLinkClick}  // Close the menu when a link is clicked
+              onClick={handleLinkClick}
             >
               {link.label}
             </a>

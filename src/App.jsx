@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Blurbackground/>
-      <main className='antialiased overflow-x-hidden max-w-7xl mx-auto
+      <main className='antialiased overflow-y-hidden max-w-7xl mx-auto
       relative z-10'>
            <Navbar/>
       <Herosection/>
