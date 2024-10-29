@@ -38,7 +38,7 @@ const Navbar = () => {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className='flex justify-between items-center max-w-6xl mx-auto md:my-2 bg-gradient-to-br from-gray-900 via-rose-600 to-gray-900 md:rounded-full backdrop-blur-lg neon-border'>
+      <div className='flex justify-between items-center max-w-6xl mx-auto md:my-2 bg-gradient-to-br  md:rounded-full backdrop-blur-lg neon-border'>
         <div className='text-white font-semibold text-3xl ml-7 uppercase'>
           <a href="/">Yash Shiva</a>
         </div>

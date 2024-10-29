@@ -19,7 +19,7 @@ export const HERO_CONTENT = {
     "I’m Yash shiva, a creative frontend developer, crafting immersive and intuitive web experiences.",
   description:
     "I’m currently helping businesses bring their visions to life through interactive digital solutions.",
-  resumeLinkText: "Download Resume",
+  resumeLinkText: "View Resume",
   resumeLink: "https://docs.google.com/document/d/1pNIQJxgfl8sviKBI7kf-ZqzDSfcOIxXsV4Fzm-VJSfc/edit",
 };
 
