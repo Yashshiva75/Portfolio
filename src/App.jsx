@@ -6,7 +6,7 @@ import Projects from './components/Projects/Projects'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Contact from './components/Contacts/Contact'
-import Headroom from 'react-headroom'
+import Skills from './components/Skills/Skills'
 
 const App = () => {
   return (
@@ -16,6 +16,7 @@ const App = () => {
       relative z-10'>
            <Navbar/>
       <Herosection/>
+      <Skills/>
       <Projects/>
       <About/>
       <Experience/>

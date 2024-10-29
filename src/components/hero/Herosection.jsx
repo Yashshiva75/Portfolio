@@ -42,7 +42,7 @@ const Herosection = () => {
                     {HERO_CONTENT.description}
                 </motion.p>
                 
-                <motion.a className='bg-stone-50 text-stone-900 p-3 lg:p-4
+                <motion.a className='bg-stone-50 block text-stone-900 p-2 lg:p-4 
                 mt-8 inline-block rounded-2xl'
                 href={HERO_CONTENT.resumeLink}download
                 rel='noopener noreferrer'
@@ -52,7 +52,7 @@ const Herosection = () => {
                 </motion.a>
 
                  <motion.a 
-                    className='bg-stone-50 ml-3 text-stone-900 p-3 lg:p-4 ml-3 mt-8 inline-block rounded-2xl'
+                    className='bg-stone-50 text-center text-stone-900 p-2 lg:p-4 lg:ml-2 mt-8 inline-block rounded-2xl'
                     href='/Yash_shiva.pdf'
                     download="Yash_shiva.pdf" 
                     rel='noopener noreferrer'
