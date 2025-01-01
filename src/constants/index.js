@@ -16,7 +16,7 @@ export const LINKS = [
 export const HERO_CONTENT = {
   greeting: "Hey there! 🖐️",
   introduction:
-    "I’m Yash shiva, a creative frontend developer, crafting immersive and intuitive web experiences.",
+    "I’m Yash shiva ,a passionate Software developer specializing in the MERN stack, crafting immersive and intuitive web experiences.",
   description:
     "I’m currently helping businesses bring their visions to life through interactive digital solutions.",
   resumeLinkText: "View Resume",
@@ -55,6 +55,14 @@ export const ABOUT_CONTENT = {
 };
 
 export const EXPERIENCES = [
+  {
+    yearRange: "2024 — Present",
+    title: "Full stack Developer at Syndell technologies",
+    location: "Ahemdabad",
+    description: [
+      "As a Full Stack Developer at Syndell Technologies, I specialized in designing and building web applications using the MERN (MongoDB, Express.js, React.js, Node.js) stack. My role involved creating responsive, user-friendly frontends with React.js, developing robust backend APIs using Node.js and Express.js, and managing efficient database operations with MongoDB. I collaborated with cross-functional teams to deliver scalable and high-performance solutions while ensuring seamless integration of third-party services. By following agile practices and maintaining a strong focus on code quality, I successfully delivered projects that met client expectations and business goals.",
+    ],
+  },
   {
     yearRange: "2023 — 2024",
     title: "Prompt Engineer at Softage.Ai",
