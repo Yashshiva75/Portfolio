@@ -60,6 +60,8 @@ const Contact = () => {
         variants={textVariants}
       >
         {CONTACT_CONTENT.email}
+        <br />
+        <span className='font-light text-lg'>{CONTACT_CONTENT.phone}</span>
       </motion.a>
 
       <div className="flex space-x-6 mt-8">

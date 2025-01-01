@@ -79,6 +79,7 @@ export const CONTACT_CONTENT = {
   description:
     "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
   email: "Yashshiva59@gmail.com",
+  phone: '+91 6378709359',
   socialLinks: [
     {
       platform: "Instagram",
