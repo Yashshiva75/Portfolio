@@ -41,10 +41,10 @@ Includes JWT auth, post interactions, profile editing, and image uploads via Clo
     live:"https://yashfoodz.netlify.app/"
   },
   {
-    name: "E-commerce",
-    description: "This app is made using React js ,Tailwind ,Headless ui, and Firebase as backend",
+    name: "Shadcn - Admin panel",
+    description: "This app is made using ShadCn and ReactTable",
     image: ecommerce,
-    link: "https://github.com/Yashshiva75/Full-stack-E-commerce",
+    link: "https://github.com/Yashshiva75/ShadcnAdmin-panel",
     
   },
   {
