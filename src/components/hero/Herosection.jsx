@@ -51,17 +51,6 @@ const Herosection = () => {
                  {HERO_CONTENT.resumeLinkText}
                 </motion.a>
 
-                 <motion.a 
-                    className='bg-stone-50 text-center text-stone-900 p-2 lg:p-4 lg:ml-2 mt-8 inline-block rounded-2xl'
-                    href='/Yash_shiva.pdf'
-                    download="Yash_shiva.pdf" 
-                    rel='noopener noreferrer'
-                    target='_blank'
-                    variants={textVariants}
-                >
-                    Download Resume
-                </motion.a>
-
             </motion.div>
             <motion.div className='w-full md:w-1/2 p-8 items-center'
             initial="hidden"
