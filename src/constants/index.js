@@ -1,10 +1,8 @@
-import yashfoodz from "../assets/yashfoodz.png";
-import food from "../assets/food.jpg";
 import recipe from "../assets/recipe.jpg";
-import twitter from "../assets/twitter.jpeg"
+import chattinglogo from "@assets/chattinglogo.webp"
 import ecommerce from "../assets/ecommerce.jpg";
-
-
+import fooddil from "@assets/fooddil.webp"
+import xlogo from "@assets/xlogo.webp"
 
 export const LINKS = [
   { href: "#work", label: "Projects" },
@@ -26,19 +24,28 @@ export const HERO_CONTENT = {
 
 export const PROJECTS = [
   {
-    name: "Full Stack Twitter Clone",
+    name: "Full Stack Chatting App",
     description: `A full-stack social media app built with React, Node.js, Express, and MongoDB.
-Includes JWT auth, post interactions, profile editing, and image uploads via Cloudinary.`,
-    image: twitter,
+  Includes JWT auth, post interactions, profile editing, and image uploads via Cloudinary.`,
+    image: chattinglogo,
     link: "https://github.com/Yashshiva75/MERN_social_media_app",
+    live:"https://chatflow-gsx8.onrender.com/"
     
   },
   {
     name: "YashFoodz",
     description: "A food Ordering app using React js and redux toolkit",
-    image: food,
+    image: fooddil,
     link: "https://github.com/Yashshiva75/Food-Dilevery-app",
     live:"https://yashfoodz.netlify.app/"
+  },
+  {
+    name: "Full Stack Twitter Clone",
+    description: `A full-stack social media app built with React, Node.js, Express, and MongoDB.
+Includes JWT auth, post interactions, profile editing, and image uploads via Cloudinary.`,
+    image: xlogo,
+    link: "https://github.com/Yashshiva75/MERN_social_media_app",
+    
   },
   {
     name: "Shadcn - Admin panel",
@@ -71,6 +78,22 @@ export const EXPERIENCES = [
     location: "Ahemdabad",
     description: [
       "In my role as a Prompt Engineer, I worked on developing and optimizing AI-driven solutions by crafting, refining, and testing prompts for large language models. My responsibilities included designing effective prompts to generate accurate, context-aware outputs, analyzing model behavior, and iterating prompts to improve performance across various use cases. I collaborated with AI teams to gather and annotate raw data, ensuring that the model responses align with the intended task requirements. Additionally, I leveraged tools like Bash scripting, Git, and GitHub for prompt version control, making significant contributions to enhancing the capabilities of AI-driven models for more reliable and efficient responses.",
+    ],
+  },
+  {
+    yearRange: "Nov 2024 — Apr 2025",
+    title: "Full Stack developer intern at Syndell technologies",
+    location: "Ahemdabad",
+    description: [
+      "At Syndell i developed a full-stack inventory management application from scratch using the PERN stack, designing and building both the frontend and backend, along with the database schema in PostgreSQL. The application features a server-side table with pagination, search, and sorting for efficient data handling. It tracks stock levels, showing how much has been sold, how much is available, and how much is pending. The system allows the admin to create new users and assign roles, manage stock entries, view supplier data, and update inventory. Additional features include stock quantity selection, categorization, supplier-wise tracking, and comprehensive record management of purchases and sales.",
+    ],
+  },
+  {
+    yearRange: "Apr 2025  — Present",
+    title: "Full Stack developer at Meru TechnoSoft",
+    location: "Ahemdabad",
+    description: [
+      "I integrated an AI-powered ChatBot module capable of interpreting user prompts (e.g., “create invoice”) to automatically navigate to the appropriate route, display a smart preview, and populate forms upon user confirmation using AI APIs. I managed the QuickBooks Sync Module by integrating the Auth Service with the QuickBooks Integration Service for smooth and secure communication, while also mapping structural and functional differences between HelloBooks and QuickBooks, implementing backend enhancements, and reviewing/refactoring intern-written code. Additionally, I integrated QuickBooks webhooks to enable real-time syncing, ensuring that any entry made in HelloBooks is instantly mirrored in QuickBooks. My contributions also extended to backend modules such as ledgers, invoices, transactions, and report generation, as well as developing responsive and reusable frontend components using React.js and Material UI to deliver a clean and intuitive user experience.",
     ],
   },
 ];
